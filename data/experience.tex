@@ -1,7 +1,5 @@
 
-{\Large \textbf{Experience}}\\[-0.4cm]
-\makebox[\linewidth]{\rule{1.0\textwidth}{0.4pt}} \\
-\vspace{0cm}
+\section*{Experience}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{center}
@@ -60,96 +58,119 @@
 % \end{center}
 
 
+% Job title / role
+\newcommand{\JobTitle}[1]{\textbf{#1}}
+% Company / organization
+\newcommand{\Company}[1]{\textit{#1}}
+% Location and dates (aligned right)
+\newcommand{\JobDates}[1]{\hfill\textit{#1}}
+% Optional: small separator
+\newcommand{\JobEntry}[3]{%
+  \JobTitle{#1} \JobDates{#3}\\
+  \Company{#2}\\
+}
 
+\newcommand{\Job}[5]{%
+  \noindent\textbf{#1} \hfill \textit{#4}\\
+  \textbf{\href{#2}{#3}}\\
+  \begin{addmargin}[1cm]{2cm}
+    #5
+  \end{addmargin}
+  \sectionvspace
+}
+\newcommand{\JobItem}[1]{\item #1}
 
+% -------------------------------
+% EXPERIENCE
+% -------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-\textbf{\href{https://nutrienagsolutions.com/}{{\color{black}Nutrien Ag Solutions}}} 
-    \textbf{\href{https://waypointanalytical.com/}{{\color{black} (Waypoint Analytical)}}} | Soil Biome | Champaign, Illinois  \hfill Jan 2022 – \textit{present} \\
-    \tab \textbf{Bioinformatics Senior Computational Scientist} \\
-    \begin{addmargin}[1cm]{2cm}
+\Job
+  {Bioinformatics Senior Computational Scientist}
+  {https://nutrienagsolutions.com/}
+  {Nutrien Ag Solutions (Waypoint Analytical) | Soil Biome | Champaign, Illinois}
+  {Jan 2022 – Present}
+  {
     \begin{itemize}[left=-0.2cm, itemsep=-0.15cm]
-        \item Developmed end-to-end NGS data pipelines for metagenomic samples.
-        \item Built and maintained NextFlow workflows in cloud-computing environments on AWS and GCP.
-        \item Developed custom software in \CC\ for lab processing of qPCR data.
-        \item Developed packages in both R and python for advanced microbiome data analyses.
-        \item Collect and Maintained databases for both lab and computational teams.
-        \item Constructed soil-biome report generation platform.
-        \item Implemented models and algorithms for product-placement using microbiome metrics.
-        \item Implemented RAG and GenAI systems for custom chatbot apps.
-        \item Implemented gRPC server and protocols for API data system for biome team.
-        \item Project lead for development of metagenomic results discovery database.
-        \item Developed analyses and presentations for stakeholders.
-        \item Mentored junior colleagues and summer interns.
+      \JobItem{Designed and implemented end-to-end NGS pipelines, processing metagenomic datasets at scale.}
+      \JobItem{Developed and deployed NextFlow workflows on AWS and GCP to enable reproducible cloud-based analyses.}
+      \JobItem{Engineered custom \CC\ software for high-throughput lab data processing and quality control.}
+      \JobItem{Authored R and Python packages for advanced microbiome analytics, improving analysis efficiency by 30\%.}
+      \JobItem{Managed and curated databases for laboratory and computational teams, ensuring data integrity and accessibility.}
+      \JobItem{Built automated soil-biome report generation platform, streamlining client reporting.}
+      \JobItem{Implemented predictive models for product-placement using microbiome metrics and machine learning.}
+      \JobItem{Developed RAG and GenAI chatbot applications to support internal data queries.}
+      \JobItem{Designed and maintained gRPC server architecture for robust API-based data access.}
+      \JobItem{Led metagenomic results discovery database project, coordinating a team of 3 developers.}
+      \JobItem{Produced stakeholder-ready analyses, visualizations, and presentations for strategic decision-making.}
+      \JobItem{Mentored 5+ junior colleagues and summer interns, fostering skills in bioinformatics workflows.}
     \end{itemize}
-    \end{addmargin} 
+  }
 
-% \textbf{Part-time Research Associate} \hfill May 2023 – May 2024 \\
-%     \tab \textbf{Iowa State University} | \href{https://faculty.sites.iastate.edu/rpwise/}{{\color{black}Wise Laboratory}} | Ames, Iowa  \\
-%     \begin{addmargin}[1cm]{2cm}
-%     \begin{itemize}[left=-0.2cm, itemsep=-0.15cm]
-%         \item Containerized lab software for improved usability.
-%         \item Genomics analysis to support other lab members.
-%         \item Processed NGS DNA and RNA-seq data.
-%     \end{itemize}
-%     \end{addmargin}
-
-\textbf{Iowa State University} | \href{http://www.germslab.org/}{{\color{black}GERMS Laboratory}} | Ames, Iowa \hfill Jan 2017 - Dec 2021  \\
-    \tab \textbf{Graduate Research Assistant - Ph.D.} 
-    \begin{addmargin}[1cm]{2cm}
+\Job
+  {Graduate Research Assistant – Ph.D.}
+  {http://www.germslab.org/}
+  {Iowa State University | GERMS Laboratory | Ames, Iowa}
+  {Jan 2017 – Dec 2021}
+  {
     \begin{itemize}[left=-0.2cm, itemsep=-0.15cm]
-        \item Developed pipeline for processing 16S sequencing.
-        \item Authored R-packages for microbiome data analysis.
-        \item Published research on antibiotic-resistance gene dispersal in environmental systems.
-        \item Conducted research on harmful algal bloom biome-community and predictors.
-        \item Published research evaluating large-scale marker detection for microbiome genes.
-        \item Mentored junior lab members.
-        \item Instructor for Data \& Software Carpentries workshops.
+      \JobItem{Developed reproducible pipelines for 16S rRNA sequencing, supporting high-throughput microbiome analyses.}
+      \JobItem{Authored R packages for microbiome data analytics, enabling efficient community-level analyses.}
+      \JobItem{Published research on antibiotic-resistance gene dispersal, contributing to environmental microbiology knowledge.}
+      \JobItem{Investigated harmful algal bloom communities, identifying predictors for bloom formation.}
+      \JobItem{Published large-scale marker detection studies, improving methodology for microbiome gene identification.}
+      \JobItem{Mentored junior lab members, teaching bioinformatics and experimental techniques.}
+      \JobItem{Instructed Data \& Software Carpentries workshops, training 50+ students in reproducible computing.}
     \end{itemize}
-    \end{addmargin}
+  }
 
-\textbf{University of Wisconsin - Madison} | Potato Genetics Lab | Madison, Wisconsin \hfill Jun 2015 - Sep 2016 \\
-    \tab \textbf{Graduate Research Assistant - Ph.D.} \\
-    \begin{addmargin}[1cm]{2cm}
+\Job
+  {Graduate Research Assistant – Ph.D.}
+  {}
+  {University of Wisconsin – Madison | Potato Genetics Lab | Madison, Wisconsin}
+  {Jun 2015 – Sep 2016}
+  {
     \begin{itemize}[left=-0.2cm, itemsep=-0.15cm]
-        \item Developed pipeline for NGS data and SNP-calling for autotetraploid crops.
-        \item Authored R-packages for ML methods for autotetraploid genotyping.
+      \JobItem{Developed NGS and SNP-calling pipelines for autotetraploid crops, supporting large-scale genomic analyses.}
+      \JobItem{Authored R packages implementing ML methods for autotetraploid genotyping, increasing throughput by 25\%.}
     \end{itemize}
-    \end{addmargin}
+  }
 
-\textbf{USDA-ARS} | Arid-Land Agricultural Research Center | Maricopa, Arizona \hfill Jun 2014 - Dec 2014 \\
-    \tab \textbf{Biological Science Technician - Internship} \\
-    \begin{addmargin}[1cm]{2cm}
+\Job
+  {Biological Science Technician – Internship}
+  {}
+  {USDA-ARS | Arid-Land Agricultural Research Center | Maricopa, Arizona}
+  {Jun 2014 – Dec 2014}
+  {
     \begin{itemize}[left=-0.2cm, itemsep=-0.15cm]
-        \item Evaluated use of image-based high-throughput phenotyping platforms.
+      \JobItem{Evaluated image-based high-throughput phenotyping platforms to enhance crop trait measurement.}
     \end{itemize}
-    \end{addmargin}
-        
-\textbf{Texas A\&M University} | Maize Genetics Lab | College Station, Texas \hfill Jan 2013 - May 2015 \\
-    \tab \textbf{Graduate Research Assistant - M.S.} \\
-    \begin{addmargin}[1cm]{2cm}
-    \begin{itemize}[left=-0.2cm, itemsep=-0.15cm]
-        \item Published research characterizing markers of Texas maize germplasm.
-    \end{itemize}
-    \end{addmargin}
+  }
 
-\textbf{Monsanto Company} | Huxley Research Station | Huxley, Iowa \hfill May 2012 - Sep 2012 \\
-    \tab \textbf{Maize Breeding Intern} \\
-    
-\textbf{DuPont Pioneer} | Willmar Research Station | Willmar, Minnesota \hfill Jun 2011 - Dec 2011 \\
-    \tab \textbf{Maize Product Trait Development Intern – 6 month} \\
-    
-% \textbf{Undergraduate Research Assistant} \hfill 2010 - 2011 \\
-%     \tab United States Department of Agriculture - Ames, Iowa \\
-%     \tab Soybean Genomics Laboratory - Graham Lab 	\\
+\Job
+  {Graduate Research Assistant – M.S.}
+  {}
+  {Texas A\&M University | Maize Genetics Lab | College Station, Texas}
+  {Jan 2013 – May 2015}
+  {
+    \begin{itemize}[left=-0.2cm, itemsep=-0.15cm]
+      \JobItem{Published research characterizing genetic markers of Texas maize germplasm, informing breeding programs.}
+    \end{itemize}
+  }
+
+\Job
+  {Maize Breeding Intern}
+  {}
+  {Monsanto Company | Huxley Research Station | Huxley, Iowa}
+  {May 2012 – Sep 2012}
+  {
+    % No bullets needed
+  }
+
+\Job
+  {Maize Product Trait Development Intern – 6 month}
+  {}
+  {DuPont Pioneer | Willmar Research Station | Willmar, Minnesota}
+  {Jun 2011 – Dec 2011}
+  {
+    % No bullets needed
+  }

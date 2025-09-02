@@ -4,7 +4,7 @@
 \setlength{\tabcolsep}{0in}
 \setlength{\topskip}{0in}
 
-\usepackage[left=0.5in,right=0.5in,top=0.75in,bottom=0.5in]{geometry}
+\usepackage[left=0.5in,right=0.6in,top=0.75in,bottom=0.6in]{geometry}
 \usepackage{framed}
 \usepackage{tocloft}
 \usepackage{graphicx}
@@ -25,10 +25,14 @@
 % setup hyperlinks
 \usepackage[svgnames]{xcolor}
 % \usepackage[backgroundcolour=black]{hrefhide}
-% \usepackage[colorlinks, urlcolor=NavyBlue]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=NavyBlue,
+    urlcolor=DarkBlue
+}
 
 % \setmainfont{Times New Roman}
-\setmainfont{Arial}
+\setmainfont{Liberation Sans}
 \newfontfamily\FluxR[Path=fonts/, Ligatures=TeX]{Flux Regular.otf}
 \newfontfamily\Cera[Path=fonts/Cera/, Ligatures=TeX]{Cera Pro Medium.otf}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -48,5 +52,11 @@
 % Customize spacing before and after section headers
 \titlespacing*{\section}
   {0pt}    % left margin
-  {0.5em}  % space before section title
-  {0.5em} % space after section title
+  {0.7em}  % space before section title
+  {0.7em}  % space after section title
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{NavyBlue}}{}{0em}{}
+
+\newcommand{\sectionvspace}{\vspace{0.35cm}}
+
+
