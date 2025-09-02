@@ -1,0 +1,52 @@
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\topskip}{0in}
+
+\usepackage[left=0.5in,right=0.5in,top=0.75in,bottom=0.5in]{geometry}
+\usepackage{framed}
+\usepackage{tocloft}
+\usepackage{graphicx}
+\usepackage{scrextend}
+\usepackage{multicol}
+\usepackage{vwcol}
+\usepackage{setspace}
+\usepackage{fontawesome}
+\usepackage{academicons}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontspec}
+\usepackage{relsize}
+\usepackage{enumitem}
+
+
+
+
+% setup hyperlinks
+\usepackage[svgnames]{xcolor}
+% \usepackage[backgroundcolour=black]{hrefhide}
+% \usepackage[colorlinks, urlcolor=NavyBlue]{hyperref}
+
+% \setmainfont{Times New Roman}
+\setmainfont{Arial}
+\newfontfamily\FluxR[Path=fonts/, Ligatures=TeX]{Flux Regular.otf}
+\newfontfamily\Cera[Path=fonts/Cera/, Ligatures=TeX]{Cera Pro Medium.otf}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Custom commands
+% Tab
+\newcommand\tab[1][.5cm]{\hspace*{#1}}
+
+% C++
+% \def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
+
+\newcommand\CC{{\Cera C\nolinebreak[4]\hspace{-.1em}\raisebox{.47ex}{\textbf{{\fontsize{3.5pt}{5pt}\selectfont ++}}}}}
+
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+
+\usepackage{titlesec}
+% Customize spacing before and after section headers
+\titlespacing*{\section}
+  {0pt}    % left margin
+  {0.5em}  % space before section title
+  {0.5em} % space after section title
