@@ -2,35 +2,35 @@
 \section*{Experience}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{center}
-    \begin{tikzpicture}
-        % Labels above timeline
-        \node[above, orange] at (2,0.5) {\textbf{Undergraduate}};
-        \node[above, blue] at (8,0.5) {\textbf{Graduate School}};
-        \node[above, cyan] at (13,0.5) {\textbf{Industry}};
+% \begin{center}
+%     \begin{tikzpicture}
+%         % Labels above timeline
+%         \node[above, orange] at (2,0.5) {\textbf{Undergraduate}};
+%         \node[above, blue] at (8,0.5) {\textbf{Graduate School}};
+%         \node[above, cyan] at (13,0.5) {\textbf{Industry}};
         
-        % Full timeline base (thin gray for reference)
-        \draw[thick, black] (0,0) -- (17,0); 
-        % Graduate School section (Blue, thicker)
-        \draw[line width=3mm, orange] (0,0) -- (5,0);
-        \draw[line width=3mm, blue] (5,0) -- (8.75,0);
-        \draw[line width=3mm, blue] (9,0) -- (14,0);
-        % Industry section (Green, thicker)
-        \draw[line width=3mm, cyan] (3.5,0) -- (4,0);
-        \draw[line width=3mm, cyan] (4.5,0) -- (4.75,0);
-        \draw[line width=3mm, cyan] (6.5,0) -- (7,0);
-        \draw[line width=3mm, cyan] (14,0) -- (17,0);
-        % Add year markers
-        \foreach \x/\year in {0/2008, 2/2010, 4/2012, 6/2014, 8/2016, 10/2018, 12/2020, 14/2022, 16/2024} {
-            \draw[very thick] (\x,0.2) -- (\x,-0.2);
-            \node[below] at (\x,-0.3) {\year};
-        }
-        \foreach \x/\year in {1/2009, 3/2011, 5/2013, 7/2015, 9/2017, 11/2019, 13/2021, 15/2023, 17/2025} {
-            \draw[line width=0.1mm] (\x,0.2) -- (\x,-0.2);
-            {\year};
-        }
-    \end{tikzpicture}
-\end{center}
+%         % Full timeline base (thin gray for reference)
+%         \draw[thick, black] (0,0) -- (17,0); 
+%         % Graduate School section (Blue, thicker)
+%         \draw[line width=3mm, orange] (0,0) -- (5,0);
+%         \draw[line width=3mm, blue] (5,0) -- (8.75,0);
+%         \draw[line width=3mm, blue] (9,0) -- (14,0);
+%         % Industry section (Green, thicker)
+%         \draw[line width=3mm, cyan] (3.5,0) -- (4,0);
+%         \draw[line width=3mm, cyan] (4.5,0) -- (4.75,0);
+%         \draw[line width=3mm, cyan] (6.5,0) -- (7,0);
+%         \draw[line width=3mm, cyan] (14,0) -- (17,0);
+%         % Add year markers
+%         \foreach \x/\year in {0/2008, 2/2010, 4/2012, 6/2014, 8/2016, 10/2018, 12/2020, 14/2022, 16/2024} {
+%             \draw[very thick] (\x,0.2) -- (\x,-0.2);
+%             \node[below] at (\x,-0.3) {\year};
+%         }
+%         \foreach \x/\year in {1/2009, 3/2011, 5/2013, 7/2015, 9/2017, 11/2019, 13/2021, 15/2023, 17/2025} {
+%             \draw[line width=0.1mm] (\x,0.2) -- (\x,-0.2);
+%             {\year};
+%         }
+%     \end{tikzpicture}
+% \end{center}
 
 
 % \begin{center}
@@ -59,20 +59,20 @@
 
 \newcommand{\Job}[4]{%
   \noindent\textbf{#1} \hfill \textit{#3}\\
-  \textbf{#2}\\
-  \begin{addmargin}[1cm]{2cm}
-    #4
-  \end{addmargin}
+  \textbf{#2}%
+  \ifstrempty{#4}{}{%
+    \\[-0.1cm]%
+    \begin{addmargin}[1cm]{2cm}%
+      #4%
+    \end{addmargin}%
+  }%
   \sectionvspace
 }
+
 \newcommand{\JobItem}[1]{\item #1}
 
-% -------------------------------
-% EXPERIENCE
-% -------------------------------
-
 \Job
-  {Bioinformatics Senior Computational Scientist}
+  {Senior Computational Scientist, Bioinformatics }
   {Nutrien Ag Solutions (Waypoint Analytical) | Soil Biome | Champaign, Illinois}
   {Jan 2022 – Present}
   {
@@ -80,14 +80,14 @@
       \JobItem{Designed and deployed end-to-end NGS pipelines, scaling metagenomic data processing to tens of thousands of samples.}
       \JobItem{Implemented cloud-based NextFlow workflows on AWS/GCP, reducing runtimes by 40\% and ensuring reproducibility.}
       \JobItem{Engineered custom \CC\ tools for high-throughput lab data processing and QC, accelerating turnaround times.}
-      \JobItem{Authored R and Python packages for microbiome analytics, improving team analysis efficiency by 30\%.}
-      \JobItem{Built an automated soil-biome reporting platform, streamlining client deliverables and saving 20+ hours/week.}
+      \JobItem{Authored R and Python packages for microbiome analytics.}
+      \JobItem{Built an automated soil-biome reporting platform, streamlining client deliverables.}
       \JobItem{Developed ML-based predictive models linking microbiome metrics to product placement decisions.}
-      \JobItem{Created RAG-powered GenAI chatbot for internal data queries, improving knowledge accessibility across teams.}
+      \JobItem{Created RAG-based GenAI chatbot for recommendations built into product pipeline.}
       \JobItem{Designed and maintained gRPC APIs, enabling seamless integration with downstream applications.}
-      \JobItem{Led a cross-functional team of 3 developers to deliver a metagenomic results discovery database.}
+      \JobItem{Project lead for development and implementation of metagenomic database.}
       \JobItem{Delivered stakeholder-ready analyses, visualizations, and presentations to inform strategic initiatives.}
-      \JobItem{Mentored 5+ junior scientists and interns, fostering skills in bioinformatics workflows and best practices.}
+      \JobItem{Mentored 5+ junior scientists and interns, fostering skills in bioinformatics workflows and best practices for data science.}
     \end{itemize}
   }
 
@@ -102,8 +102,8 @@
       \JobItem{Published research on antibiotic-resistance gene dispersal, advancing knowledge in environmental microbiology.}
       \JobItem{Identified microbial predictors of harmful algal blooms, informing water-quality management strategies.}
       \JobItem{Conducted large-scale marker detection studies, improving methodology for microbiome gene identification.}
-      \JobItem{Mentored junior lab members in bioinformatics and experimental methods, increasing team productivity.}
-      \JobItem{Instructed Carpentries workshops, training 50+ students in reproducible computing practices.}
+      \JobItem{Mentored junior lab members in bioinformatics and experimental methods.}
+      \JobItem{Instructed Carpentries workshops, training hundreds of students and professionals in reproducible computing practices.}
     \end{itemize}
   }
 
@@ -142,14 +142,10 @@
   {Maize Breeding Intern}
   {Monsanto Company | Huxley Research Station | Huxley, Iowa}
   {May 2012 – Sep 2012}
-  {
-    % No bullets needed
-  }
+  {}
 
 \Job
   {Maize Product Trait Development Intern}
   {DuPont Pioneer | Willmar Research Station | Willmar, Minnesota}
   {Jun 2011 – Dec 2011}
-  {
-    % No bullets needed
-  }
+  {}
