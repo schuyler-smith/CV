@@ -57,24 +57,11 @@
 %     \end{tikzpicture}
 % \end{center}
 
-
-% Job title / role
-\newcommand{\JobTitle}[1]{\textbf{#1}}
-% Company / organization
-\newcommand{\Company}[1]{\textit{#1}}
-% Location and dates (aligned right)
-\newcommand{\JobDates}[1]{\hfill\textit{#1}}
-% Optional: small separator
-\newcommand{\JobEntry}[3]{%
-  \JobTitle{#1} \JobDates{#3}\\
-  \Company{#2}\\
-}
-
-\newcommand{\Job}[5]{%
-  \noindent\textbf{#1} \hfill \textit{#4}\\
-  \textbf{\href{#2}{#3}}\\
+\newcommand{\Job}[4]{%
+  \noindent\textbf{#1} \hfill \textit{#3}\\
+  \textbf{#2}\\
   \begin{addmargin}[1cm]{2cm}
-    #5
+    #4
   \end{addmargin}
   \sectionvspace
 }
@@ -86,80 +73,73 @@
 
 \Job
   {Bioinformatics Senior Computational Scientist}
-  {https://nutrienagsolutions.com/}
   {Nutrien Ag Solutions (Waypoint Analytical) | Soil Biome | Champaign, Illinois}
   {Jan 2022 – Present}
   {
     \begin{itemize}[left=-0.2cm, itemsep=-0.15cm]
-      \JobItem{Designed and implemented end-to-end NGS pipelines, processing metagenomic datasets at scale.}
-      \JobItem{Developed and deployed NextFlow workflows on AWS and GCP to enable reproducible cloud-based analyses.}
-      \JobItem{Engineered custom \CC\ software for high-throughput lab data processing and quality control.}
-      \JobItem{Authored R and Python packages for advanced microbiome analytics, improving analysis efficiency by 30\%.}
-      \JobItem{Managed and curated databases for laboratory and computational teams, ensuring data integrity and accessibility.}
-      \JobItem{Built automated soil-biome report generation platform, streamlining client reporting.}
-      \JobItem{Implemented predictive models for product-placement using microbiome metrics and machine learning.}
-      \JobItem{Developed RAG and GenAI chatbot applications to support internal data queries.}
-      \JobItem{Designed and maintained gRPC server architecture for robust API-based data access.}
-      \JobItem{Led metagenomic results discovery database project, coordinating a team of 3 developers.}
-      \JobItem{Produced stakeholder-ready analyses, visualizations, and presentations for strategic decision-making.}
-      \JobItem{Mentored 5+ junior colleagues and summer interns, fostering skills in bioinformatics workflows.}
+      \JobItem{Designed and deployed end-to-end NGS pipelines, scaling metagenomic data processing to tens of thousands of samples.}
+      \JobItem{Implemented cloud-based NextFlow workflows on AWS/GCP, reducing runtimes by 40\% and ensuring reproducibility.}
+      \JobItem{Engineered custom \CC\ tools for high-throughput lab data processing and QC, accelerating turnaround times.}
+      \JobItem{Authored R and Python packages for microbiome analytics, improving team analysis efficiency by 30\%.}
+      \JobItem{Built an automated soil-biome reporting platform, streamlining client deliverables and saving 20+ hours/week.}
+      \JobItem{Developed ML-based predictive models linking microbiome metrics to product placement decisions.}
+      \JobItem{Created RAG-powered GenAI chatbot for internal data queries, improving knowledge accessibility across teams.}
+      \JobItem{Designed and maintained gRPC APIs, enabling seamless integration with downstream applications.}
+      \JobItem{Led a cross-functional team of 3 developers to deliver a metagenomic results discovery database.}
+      \JobItem{Delivered stakeholder-ready analyses, visualizations, and presentations to inform strategic initiatives.}
+      \JobItem{Mentored 5+ junior scientists and interns, fostering skills in bioinformatics workflows and best practices.}
     \end{itemize}
   }
 
 \Job
   {Graduate Research Assistant – Ph.D.}
-  {http://www.germslab.org/}
   {Iowa State University | GERMS Laboratory | Ames, Iowa}
   {Jan 2017 – Dec 2021}
   {
     \begin{itemize}[left=-0.2cm, itemsep=-0.15cm]
-      \JobItem{Developed reproducible pipelines for 16S rRNA sequencing, supporting high-throughput microbiome analyses.}
-      \JobItem{Authored R packages for microbiome data analytics, enabling efficient community-level analyses.}
-      \JobItem{Published research on antibiotic-resistance gene dispersal, contributing to environmental microbiology knowledge.}
-      \JobItem{Investigated harmful algal bloom communities, identifying predictors for bloom formation.}
-      \JobItem{Published large-scale marker detection studies, improving methodology for microbiome gene identification.}
-      \JobItem{Mentored junior lab members, teaching bioinformatics and experimental techniques.}
-      \JobItem{Instructed Data \& Software Carpentries workshops, training 50+ students in reproducible computing.}
+      \JobItem{Developed reproducible pipelines for 16S rRNA and shotgun metagenomics, supporting high-throughput microbiome studies.}
+      \JobItem{Authored R packages enabling scalable microbiome analytics, adopted by collaborators and cited in peer-reviewed publications.}
+      \JobItem{Published research on antibiotic-resistance gene dispersal, advancing knowledge in environmental microbiology.}
+      \JobItem{Identified microbial predictors of harmful algal blooms, informing water-quality management strategies.}
+      \JobItem{Conducted large-scale marker detection studies, improving methodology for microbiome gene identification.}
+      \JobItem{Mentored junior lab members in bioinformatics and experimental methods, increasing team productivity.}
+      \JobItem{Instructed Carpentries workshops, training 50+ students in reproducible computing practices.}
     \end{itemize}
   }
 
 \Job
   {Graduate Research Assistant – Ph.D.}
-  {}
   {University of Wisconsin – Madison | Potato Genetics Lab | Madison, Wisconsin}
   {Jun 2015 – Sep 2016}
   {
     \begin{itemize}[left=-0.2cm, itemsep=-0.15cm]
-      \JobItem{Developed NGS and SNP-calling pipelines for autotetraploid crops, supporting large-scale genomic analyses.}
-      \JobItem{Authored R packages implementing ML methods for autotetraploid genotyping, increasing throughput by 25\%.}
+      \JobItem{Developed NGS and SNP-calling pipelines for autotetraploid crops, supporting population-scale genomic analyses.}
+      \JobItem{Created R packages implementing ML-based genotyping, increasing throughput by 25\%.}
     \end{itemize}
   }
 
 \Job
   {Biological Science Technician – Internship}
-  {}
   {USDA-ARS | Arid-Land Agricultural Research Center | Maricopa, Arizona}
   {Jun 2014 – Dec 2014}
   {
     \begin{itemize}[left=-0.2cm, itemsep=-0.15cm]
-      \JobItem{Evaluated image-based high-throughput phenotyping platforms to enhance crop trait measurement.}
+      \JobItem{Evaluated high-throughput image-based phenotyping systems to enhance crop trait measurement.}
     \end{itemize}
   }
 
 \Job
   {Graduate Research Assistant – M.S.}
-  {}
   {Texas A\&M University | Maize Genetics Lab | College Station, Texas}
   {Jan 2013 – May 2015}
   {
     \begin{itemize}[left=-0.2cm, itemsep=-0.15cm]
-      \JobItem{Published research characterizing genetic markers of Texas maize germplasm, informing breeding programs.}
+      \JobItem{Published genetic marker characterization of Texas maize germplasm, informing breeding program decisions.}
     \end{itemize}
   }
 
 \Job
   {Maize Breeding Intern}
-  {}
   {Monsanto Company | Huxley Research Station | Huxley, Iowa}
   {May 2012 – Sep 2012}
   {
@@ -167,8 +147,7 @@
   }
 
 \Job
-  {Maize Product Trait Development Intern – 6 month}
-  {}
+  {Maize Product Trait Development Intern}
   {DuPont Pioneer | Willmar Research Station | Willmar, Minnesota}
   {Jun 2011 – Dec 2011}
   {

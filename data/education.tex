@@ -4,11 +4,10 @@
 % Usage: \Edu{Degree}{University | Location}{Date}{Optional description}
 \newcommand{\Edu}[4]{
   \textbf{#1} \hfill #3 \\   % Degree and date
-  #2 \\                       % University + location
-  \ifx&#4&\else                % Optional description
-    \textit{#4} \\
+  #2 \\                      % University + location
+  \ifx&#4&\else              % Optional description
+    #4 \\
   \fi
-  \vspace{0.5em}             % Spacing after each entry
 }
 
 
@@ -18,13 +17,15 @@
   {Ph.D. Bioinformatics and Computational Biology}
   {Iowa State University | Ames, Iowa}
   {Dec 2021}
-  {Dissertation: Characterization of environmental microbiomes impacted by Iowa agriculture}
+  {Dissertation: \textit{Characterization of environmental microbiomes impacted by Iowa agriculture}}
+  \vspace{0.5em}             % Spacing after each entry
 
 \Edu
   {M.S. Quantitative Genetics and Plant Breeding}
   {Texas A\&M University | College Station, Texas}
   {May 2015}
-  {Thesis: Molecular Characterization of the Texas Maize Breeding Program}
+  {Thesis: \textit{Molecular Characterization of the Texas Maize Breeding Program}}
+  \vspace{0.5em}             % Spacing after each entry
 
 \Edu
   {B.S. Genetics}
